@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>My Hugo Blog</title>
+</head>
+<body>
+
+<h1>My Hugo Blog</h1>
+
+{{ range .Site.RegularPages }}
+<h2>
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+</h2>
+
+{{ .Content }}
+
+<hr>
+{{ end }}
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ .Title }} - {{ .Site.Title }}</title>
+</head>
+<body>
+
+<h1>{{ .Site.Title }}</h1>
+
+<article>
+  <h2>{{ .Title }}</h2>
+
+  {{ .Content }}
+</article>
+
+<p>
+  <a href="/">← 記事一覧に戻る</a>
+</p>
+
+</body>
+</html>
